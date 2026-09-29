@@ -1,52 +1,21 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+# Muba-Obama AI
 
-<uses-permission android:name="android.permission.INTERNET"/>
+A modern Android AI assistant built with Java and Android Studio.
 
-<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+## Features
+- Claude-inspired interface
+- Light and dark themes
+- Multiple AI model support
+- Voice conversations
+- Code generation
+- Image and document analysis
+- Web search
+- Chat history
+- Developer profile and contact information
+- Accessibility-based phone controls
 
-<uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+## Project Status
+Currently under development.
 
-<uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
-
-<uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
-
-<queries>
-
-<intent>
-
-<action android:name="android.speech.RecognitionService"/>
-
-</intent>
-
-</queries>
-
-<application android:allowBackup="true" android:label="Muba-Obama AI" android:theme="@style/AppTheme" android:usesCleartextTraffic="false">
-
-<activity android:name=".MainActivity" android:exported="true">
-
-<intent-filter>
-
-<action android:name="android.intent.action.MAIN"/>
-
-<category android:name="android.intent.category.LAUNCHER"/>
-
-</intent-filter>
-
-</activity>
-
-<service android:name=".PhoneControlService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:exported="true" android:label="Muba-Obama Phone Controls">
-
-<intent-filter>
-
-<action android:name="android.accessibilityservice.AccessibilityService"/>
-
-</intent-filter>
-
-<meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibility_service_config"/>
-
-</service>
-
-</application>
-
-</manifest>
-
+## Developer
+Mubarek Mohammed
